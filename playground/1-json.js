@@ -13,3 +13,4 @@ const parsedData = JSON.parse(bookJSON);
 
 console.log(parsedData.author);
 
+fs.writeFileSync('playground/1-json.json',bookJSON);
