@@ -1,5 +1,5 @@
 .idea/*
 
 
-notes-app/node_modules
+notes-app/node_modules/*
 notes-app/notes.txt
