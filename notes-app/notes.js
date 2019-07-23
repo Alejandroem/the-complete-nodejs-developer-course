@@ -30,11 +30,11 @@ const addNote = function(title, body) {
 const removeNote= function (title){
     const notes = loadNotes();
 
-    const noteToRemove = notes.filter(function (note){
-       return note.title === title;
+    const filteredNotes = notes.filter(function (note){
+       return note.title !== title;
     });
 
-    console.log(noteToRemove);
+    saveNotes(filteredNotes);
 };
 
 const saveNotes = function (notes){
