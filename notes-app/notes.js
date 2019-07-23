@@ -39,9 +39,8 @@ const removeNote= function (title){
         console.log(chalk.red('No note was removed!'));
     } else {
         console.log(chalk.green('Note was removed!'));
+        saveNotes(filteredNotes);
     }
-
-    saveNotes(filteredNotes);
 };
 
 const saveNotes = function (notes){
