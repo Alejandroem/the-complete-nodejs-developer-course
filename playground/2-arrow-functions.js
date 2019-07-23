@@ -16,8 +16,16 @@ const square = (x) => {
 // ARROW FUNCTIONS DONT BIND THIS VALUE
 const event = {
     name: 'Barcelona beach festival',
+    guestList: ['Alex','Byron','Fer'],
     printGuestList() {
         console.log('Guest list for '+this.name);
+
+        //Standar functions has their own this bindings
+        //const that = this
+        //Arrow functions dont bind their own this value
+        this.guestList.forEach( (guest) => {
+            console.log(guest +' is attending to ',this.name);
+        });
     }
 };
 
