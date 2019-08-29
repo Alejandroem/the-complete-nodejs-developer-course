@@ -1,0 +1,30 @@
+CLI
+npm create devuelve un JSON con códigos
+
+npm cli activos/inactivos  JSON con todos los códigos 
+
+npm cli expire/active JSON con códigos
+
+ENDPOINTS
+
+-------------
+POST /code/valid/{code}
+
+JSON Input
+{
+    "code": 12345,
+    "expired": false,
+    "createdAt": new Date()
+}
+
+JSON Output
+{
+    "valid": true
+}
+
+---------------
+
+
+{
+    "codes": [113580, 704167, 449174]
+}
